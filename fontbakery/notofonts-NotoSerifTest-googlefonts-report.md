@@ -1,73 +1,17 @@
 ## FontBakery report
 
-fontbakery version: 0.12.9
+fontbakery version: 0.12.10
 
 
 
-## Experimental checks
-
-These won't break the CI job for now, but will become effective after some time if nobody raises any concern.
 
 
-<details><summary>[1] NotoSerifTest[wght].ttf</summary>
+## Check results
+
+
+
+<details><summary>[17] NotoSerifTest[wght].ttf</summary>
 <div>
-<details>
-    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>Family metadata at fonts/NotoSerifTest/googlefonts/variable-ttf does not have an article.</p>
- [code: lacks-article]
-
-
-
-</div>
-</details>
-</div>
-</details>
-
-
-
-
-## All other checks
-
-
-
-<details><summary>[18] NotoSerifTest[wght].ttf</summary>
-<div>
-<details>
-    <summary>💥 <b>ERROR</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 💥 **ERROR** <p>Failed to access: <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a>.
-This check relies on the external service <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a> via the internet. While the service cannot be reached or does not respond this check is broken.</p>
-<pre><code>	You can exclude this check with the command line option:
-	-x com.google.fonts/check/fontdata_namecheck
-
-	Or you can wait until the service is available again.
-	If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
-
-	Original error message:
-	&lt;class 'requests.exceptions.ConnectionError'&gt;
-</code></pre>
- [code: namecheck-service]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
     <div>
@@ -103,7 +47,7 @@ This check relies on the external service <a href="http://namecheck.fontdata.com
 
 * 🔥 **FAIL** <p>OS/2 sTypoLineGap is not equal to 0.</p>
 <p><em>Overridden</em>: This check was originally a WARN but was
-overridden by the ufo profile:
+overridden by the universal profile:
 For Google Fonts, all messages from this check are considered FAILs.</p>
  [code: OS/2]
 
@@ -183,27 +127,6 @@ For Google Fonts, all messages from this check are considered FAILs.</p>
 
 * 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
  [code: missing-description]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check license file has good copyright string. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.license.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>First line in license file is:</p>
-<p>&quot;copyright 20** the noto project authors (<a href="https://github.com/notofonts/noto-project-template">https://github.com/notofonts/noto-project-template</a>)&quot;</p>
-<p>which does not match the expected format, similar to:</p>
-<p>&quot;Copyright 2022 The Familyname Project Authors (git url)&quot;</p>
- [code: bad-format]
 
 
 
@@ -1257,6 +1180,51 @@ For Google Fonts, all messages from this check are considered FAILs.</p>
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Family metadata at fonts/NotoSerifTest/googlefonts/variable-ttf does not have an article.</p>
+ [code: lacks-article]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+0020 SPACE: try adding one of: chorasmian, todhri, lepcha, sinhala, old-permic, nyiakeng-puachue-hmong, batak, syriac, medefaidrin, tulu-tigalari, tai-viet, manichaean, greek-ext, old-hungarian, makasar, warang-citi, phoenician, vietnamese, masaram-gondi, bassa-vah, meroitic, hanifi-rohingya, imperial-aramaic, latin, signwriting, korean, lao, georgian, thai, limbu, ol-onal, japanese, kharoshthi, devanagari, sunuwar, toto, multani, symbols, gurmukhi, mongolian, dives-akuru, old-south-arabian, elbasan, avestan, linear-b, modi, vithkuqi, kana-extended, palmyrene, ol-chiki, arabic, cypriot, greek, zanabazar-square, canadian-aboriginal, hebrew, ugaritic, cherokee, kayah-li, nabataean, old-uyghur, bengali, mende-kikakui, runic, new-tai-lue, saurashtra, znamenny, egyptian-hieroglyphs, kawi, nko, gurung-khema, osmanya, lycian, siddham, indic-siyaq-numbers, vai, pau-cin-hau, old-north-arabian, sogdian, mro, osage, nushu, old-sogdian, grantha, oriya, malayalam, miao, tai-le, braille, carian, ahom, newa, mandaic, khudawadi, nandinagari, brahmi, mayan-numerals, sharada, chinese-simplified, tagbanwa, lydian, elymaic, hatran, cham, javanese, sundanese, music, tifinagh, cyrillic, hanunoo, bamum, dogra, pahawh-hmong, symbols2, caucasian-albanian, balinese, wancho, ottoman-siyaq-numbers, mahajani, armenian, telugu, thaana, latin-ext, meroitic-hieroglyphs, rejang, cypro-minoan, khitan-small-script, buhid, tagalog, meetei-mayek, psalter-pahlavi, cuneiform, coptic, tamil, inscriptional-parthian, gothic, kirat-rai, deseret, gunjala-gondi, adlam, takri, bhaiksuki, marchen, soyombo, sora-sompeng, tirhuta, yi, yezidi, cyrillic-ext, old-italic, glagolitic, nag-mundari, tibetan, samaritan, garay, shavian, tangut, chinese-hongkong, buginese, gujarati, chinese-traditional, kaithi, meroitic-cursive, ogham, linear-a, anatolian-hieroglyphs, old-turkic, tangsa, syloti-nagri, duployan, tai-tham, phags-pa, tamil-supplement, old-persian, inscriptional-pahlavi, lisu, ethiopic, math, kannada, myanmar, chakma, khojki</li>
+<li>U+0E70 : not included in any glyphset definition</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
+ [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Are there any misaligned on-curve points? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/outline.html#"></a></summary>
     <div>
 
@@ -1286,33 +1254,6 @@ For Google Fonts, all messages from this check are considered FAILs.</p>
 * uni0E70 (U+0E70): X=128.0,Y=1.0 (should be at baseline 0?)
 </code></pre>
  [code: found-misalignments]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
-any subsets defined in the font's metadata file, and will never
-be served. You can solve this by either manually adding additional
-subset declarations to METADATA.pb, or by editing the glyphset
-definitions.</p>
-<ul>
-<li>U+0020 SPACE: try adding one of: manichaean, latin, osmanya, psalter-pahlavi, caucasian-albanian, indic-siyaq-numbers, inscriptional-pahlavi, samaritan, georgian, bamum, ahom, cherokee, symbols, hatran, meetei-mayek, buginese, grantha, devanagari, gurmukhi, nabataean, modi, vithkuqi, runic, gujarati, palmyrene, japanese, hanifi-rohingya, cyrillic-ext, kaithi, mongolian, tai-viet, braille, lepcha, siddham, kayah-li, old-turkic, cyrillic, myanmar, carian, kawi, takri, yezidi, vietnamese, vai, rejang, lisu, pau-cin-hau, signwriting, tamil, miao, javanese, sora-sompeng, lycian, greek, ugaritic, cypro-minoan, old-hungarian, armenian, osage, korean, deseret, duployan, nko, gunjala-gondi, chinese-hongkong, anatolian-hieroglyphs, tagalog, zanabazar-square, old-north-arabian, kharoshthi, warang-citi, sharada, bengali, tagbanwa, tirhuta, phoenician, mro, nyiakeng-puachue-hmong, tamil-supplement, ottoman-siyaq-numbers, elymaic, meroitic-hieroglyphs, yi, lao, kana-extended, nag-mundari, old-sogdian, multani, old-permic, syloti-nagri, kannada, old-uyghur, arabic, music, mahajani, new-tai-lue, adlam, bhaiksuki, chakma, khojki, wancho, hanunoo, egyptian-hieroglyphs, newa, mende-kikakui, marchen, old-south-arabian, greek-ext, imperial-aramaic, batak, inscriptional-parthian, cuneiform, thaana, khudawadi, toto, bassa-vah, brahmi, masaram-gondi, nandinagari, khitan-small-script, sogdian, tangsa, ethiopic, latin-ext, tai-tham, glagolitic, linear-a, canadian-aboriginal, malayalam, syriac, pahawh-hmong, tai-le, makasar, tifinagh, balinese, chinese-traditional, soyombo, lydian, hebrew, shavian, saurashtra, ogham, ol-chiki, math, oriya, tibetan, medefaidrin, mandaic, cham, cypriot, nushu, phags-pa, dogra, chinese-simplified, mayan-numerals, linear-b, tangut, gothic, telugu, sinhala, avestan, sundanese, thai, elbasan, chorasmian, coptic, limbu, buhid, meroitic, old-italic, znamenny, old-persian, dives-akuru, meroitic-cursive</li>
-<li>U+0E70 : not included in any glyphset definition</li>
-</ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
- [code: unreachable-subsetting]
 
 
 
@@ -1404,8 +1345,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 1 | 0 | 12 | 7 | 106 | 7 | 119 | 0 | 
-| 0% | 0% | 5% | 3% | 42% | 3% | 47% | 0% | 
+| 0 | 0 | 11 | 7 | 105 | 7 | 121 | 0 | 
+| 0% | 0% | 4% | 3% | 42% | 3% | 48% | 0% | 
 
 
 

@@ -270,22 +270,22 @@ you're checking.</p>
         <th>✅ PASS</th>
     </tr>
     <tr>
-        <td>1</td>
         <td>0</td>
-        <td>7</td>
+        <td>0</td>
         <td>6</td>
-        <td>125</td>
+        <td>6</td>
+        <td>124</td>
         <td>7</td>
-        <td>106</td>
+        <td>108</td>
     </tr>
     <tr>
         <td>0%</td>
         <td>0%</td>
-        <td>3%</td>
         <td>2%</td>
-        <td>50%</td>
+        <td>2%</td>
+        <td>49%</td>
         <td>3%</td>
-        <td>42%</td>
+        <td>43%</td>
     </tr>
 </table>
         
@@ -310,7 +310,7 @@ immediately.
 <p>(but other kinds of bug reports and/or feature requests
     are also always welcome, of course!)</p>
 
-<p>FontBakery version: 0.12.9</p>
+<p>FontBakery version: 0.12.10</p>
         
             
                 <h2>OpenType Specification Checks</h2>
@@ -1598,196 +1598,12 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
             
         
             
-                <h2>Outline Checks</h2>
-<span class='section__emoji'>
-    ⚠️⚠️
-</span>
-
-    <h3>
-    
-    Are there any misaligned on-curve points?
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                ⚠️
-                NotoSansTest-Regular.ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                            <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
-<pre><code>* uni0E70 (U+0E70): X=892.0,Y=2.0 (should be at baseline 0?)
-
-* uni0E70 (U+0E70): X=413.0,Y=2.0 (should be at baseline 0?)
-
-* uni0E70 (U+0E70): X=563.0,Y=-2.0 (should be at baseline 0?)
-
-* uni0E70 (U+0E70): X=726.0,Y=-2.0 (should be at baseline 0?)
-</code></pre>
-
-                            
-                             [code: found-misalignments]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
-    
-
-
-    <h3>
-    
-    Are any segments inordinately short?
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                ⚠️
-                NotoSansTest-Regular.ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
-
-                            <span class='details_text'>
-                            <p>The following glyphs have segments which seem very short:</p>
-<pre><code>* uni0E70 (U+0E70) contains a short segment L&lt;&lt;175.0,54.0&gt;--&lt;174.0,54.0&gt;&gt;
-</code></pre>
-
-                            
-                             [code: found-short-segments]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
-    
-
-
-    <h3>
-    
-    Do any segments have colinear vectors?
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-    <h3>
-    
-    Do outlines contain any jaggy segments?
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-    <h3>
-    
-    Do outlines contain any semi-vertical or semi-horizontal lines?
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-    <h3>
-    
-    Check the direction of the outermost contour in each glyph
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_direction&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-            
-        
-            
-        
-            
                 <h2>Article Checks</h2>
 <span class='section__emoji'>
     ⚠️
 </span>
 
     <h3>
-    
-    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/Mar/25</div>
     
     Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets.
 </h3>
@@ -1837,7 +1653,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
             
                 <h2>Metadata Checks</h2>
 <span class='section__emoji'>
-    ⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩
+    ⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩
 </span>
 
     <h3>
@@ -2189,24 +2005,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     Ensure there is a regular style defined in METADATA.pb.
 </h3>
 <div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/has_regular&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-    <h3>
-    
-    The font has tags in the GF Tags spreadsheet
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/has_tags&gt;</div>
 
 
 
@@ -2635,8 +2433,8 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+0020 SPACE: try adding one of: inscriptional-parthian, avestan, tagalog, buhid, pahawh-hmong, sundanese, korean, ahom, cyrillic-ext, vietnamese, soyombo, znamenny, ol-chiki, mro, phoenician, bhaiksuki, runic, cuneiform, miao, arabic, latin-ext, thaana, music, mongolian, yi, adlam, lycian, malayalam, lepcha, dives-akuru, gothic, javanese, tibetan, makasar, ogham, meroitic, gunjala-gondi, pau-cin-hau, kayah-li, devanagari, meroitic-cursive, psalter-pahlavi, old-persian, thai, deseret, lao, phags-pa, khitan-small-script, coptic, kana-extended, oriya, chorasmian, glagolitic, shavian, newa, cherokee, elbasan, limbu, chinese-simplified, tai-le, syloti-nagri, mandaic, sora-sompeng, anatolian-hieroglyphs, cyrillic, marchen, lydian, linear-b, nko, greek-ext, canadian-aboriginal, old-uyghur, kannada, grantha, balinese, kawi, wancho, inscriptional-pahlavi, medefaidrin, toto, lisu, nag-mundari, new-tai-lue, duployan, sogdian, osmanya, dogra, tangsa, takri, indic-siyaq-numbers, georgian, khudawadi, ethiopic, ottoman-siyaq-numbers, tangut, tamil, symbols, braille, mende-kikakui, hanunoo, meroitic-hieroglyphs, multani, old-sogdian, hanifi-rohingya, modi, hatran, kaithi, cham, rejang, tai-tham, elymaic, linear-a, buginese, yezidi, nushu, hebrew, manichaean, bengali, bassa-vah, tirhuta, latin, tamil-supplement, old-north-arabian, nyiakeng-puachue-hmong, brahmi, old-hungarian, imperial-aramaic, mahajani, ugaritic, siddham, gurmukhi, chakma, caucasian-albanian, bamum, vai, tagbanwa, syriac, math, japanese, egyptian-hieroglyphs, vithkuqi, telugu, warang-citi, old-permic, old-italic, masaram-gondi, batak, myanmar, tifinagh, chinese-hongkong, saurashtra, old-turkic, nandinagari, chinese-traditional, zanabazar-square, signwriting, tai-viet, gujarati, nabataean, carian, palmyrene, greek, sharada, cypro-minoan, sinhala, old-south-arabian, samaritan, mayan-numerals, armenian, osage, meetei-mayek, khojki, kharoshthi, cypriot</li>
-<li>U+00A0 NO-BREAK SPACE: try adding one of: inscriptional-parthian, avestan, tagalog, buhid, pahawh-hmong, sundanese, korean, ahom, cyrillic-ext, vietnamese, soyombo, znamenny, ol-chiki, mro, phoenician, bhaiksuki, runic, cuneiform, miao, arabic, latin-ext, thaana, music, mongolian, yi, adlam, lycian, malayalam, lepcha, dives-akuru, gothic, javanese, tibetan, makasar, ogham, meroitic, gunjala-gondi, pau-cin-hau, kayah-li, devanagari, meroitic-cursive, psalter-pahlavi, old-persian, thai, deseret, lao, phags-pa, khitan-small-script, coptic, kana-extended, oriya, chorasmian, glagolitic, shavian, newa, cherokee, elbasan, limbu, chinese-simplified, tai-le, syloti-nagri, mandaic, sora-sompeng, anatolian-hieroglyphs, cyrillic, marchen, lydian, linear-b, nko, greek-ext, canadian-aboriginal, old-uyghur, kannada, grantha, balinese, kawi, wancho, inscriptional-pahlavi, medefaidrin, toto, lisu, nag-mundari, new-tai-lue, duployan, sogdian, osmanya, dogra, tangsa, takri, indic-siyaq-numbers, georgian, khudawadi, ethiopic, ottoman-siyaq-numbers, tangut, tamil, symbols, braille, mende-kikakui, hanunoo, meroitic-hieroglyphs, multani, old-sogdian, hanifi-rohingya, modi, hatran, kaithi, cham, rejang, tai-tham, elymaic, linear-a, buginese, yezidi, nushu, hebrew, manichaean, bengali, bassa-vah, tirhuta, latin, tamil-supplement, old-north-arabian, nyiakeng-puachue-hmong, brahmi, old-hungarian, imperial-aramaic, mahajani, ugaritic, siddham, gurmukhi, chakma, caucasian-albanian, bamum, vai, tagbanwa, syriac, math, japanese, egyptian-hieroglyphs, vithkuqi, telugu, warang-citi, old-permic, old-italic, masaram-gondi, batak, myanmar, tifinagh, chinese-hongkong, saurashtra, old-turkic, nandinagari, chinese-traditional, zanabazar-square, signwriting, tai-viet, gujarati, nabataean, carian, palmyrene, greek, sharada, cypro-minoan, sinhala, old-south-arabian, samaritan, mayan-numerals, armenian, osage, meetei-mayek, khojki, kharoshthi, cypriot</li>
+<li>U+0020 SPACE: try adding one of: cherokee, old-turkic, miao, cypro-minoan, arabic, dogra, tifinagh, marchen, chinese-hongkong, bassa-vah, medefaidrin, new-tai-lue, indic-siyaq-numbers, music, limbu, sogdian, garay, chakma, old-south-arabian, inscriptional-pahlavi, meroitic, saurashtra, takri, cyrillic, deseret, symbols, meetei-mayek, thaana, latin-ext, glagolitic, samaritan, tulu-tigalari, elymaic, toto, oriya, khudawadi, linear-a, carian, greek-ext, hebrew, tangsa, cuneiform, gurmukhi, georgian, bamum, gunjala-gondi, modi, nyiakeng-puachue-hmong, cyrillic-ext, mandaic, kawi, ol-onal, thai, sora-sompeng, mongolian, tagbanwa, kharoshthi, grantha, old-north-arabian, sunuwar, avestan, braille, nandinagari, newa, soyombo, rejang, dives-akuru, meroitic-hieroglyphs, khojki, latin, nabataean, chinese-simplified, wancho, pau-cin-hau, cypriot, malayalam, kaithi, syloti-nagri, lydian, bhaiksuki, kannada, manichaean, old-hungarian, pahawh-hmong, symbols2, tangut, kayah-li, meroitic-cursive, myanmar, ugaritic, todhri, gurung-khema, mro, lycian, makasar, multani, ogham, vietnamese, old-permic, phags-pa, hanifi-rohingya, runic, buhid, old-italic, warang-citi, adlam, imperial-aramaic, duployan, egyptian-hieroglyphs, cham, mende-kikakui, masaram-gondi, caucasian-albanian, znamenny, bengali, elbasan, psalter-pahlavi, hatran, chorasmian, old-sogdian, khitan-small-script, anatolian-hieroglyphs, canadian-aboriginal, brahmi, tai-viet, gujarati, tai-tham, nko, greek, vithkuqi, devanagari, osmanya, lao, nag-mundari, tai-le, ottoman-siyaq-numbers, tamil, armenian, tamil-supplement, zanabazar-square, shavian, lisu, sharada, yi, inscriptional-parthian, vai, ahom, mahajani, mayan-numerals, ethiopic, osage, tibetan, yezidi, batak, balinese, ol-chiki, korean, japanese, old-persian, siddham, lepcha, sinhala, math, signwriting, tagalog, chinese-traditional, tirhuta, coptic, hanunoo, kirat-rai, kana-extended, nushu, buginese, javanese, old-uyghur, palmyrene, gothic, sundanese, linear-b, syriac, telugu, phoenician</li>
+<li>U+00A0 NO-BREAK SPACE: try adding one of: cherokee, old-turkic, miao, cypro-minoan, arabic, dogra, tifinagh, marchen, chinese-hongkong, bassa-vah, medefaidrin, new-tai-lue, indic-siyaq-numbers, music, limbu, sogdian, garay, chakma, old-south-arabian, inscriptional-pahlavi, meroitic, saurashtra, takri, cyrillic, deseret, symbols, meetei-mayek, thaana, latin-ext, glagolitic, samaritan, tulu-tigalari, elymaic, toto, oriya, khudawadi, linear-a, carian, greek-ext, hebrew, tangsa, cuneiform, gurmukhi, georgian, bamum, gunjala-gondi, modi, nyiakeng-puachue-hmong, cyrillic-ext, mandaic, kawi, ol-onal, thai, sora-sompeng, mongolian, tagbanwa, kharoshthi, grantha, old-north-arabian, sunuwar, avestan, braille, nandinagari, newa, soyombo, rejang, dives-akuru, meroitic-hieroglyphs, khojki, latin, nabataean, chinese-simplified, wancho, pau-cin-hau, cypriot, malayalam, kaithi, syloti-nagri, lydian, bhaiksuki, kannada, manichaean, old-hungarian, pahawh-hmong, symbols2, tangut, kayah-li, meroitic-cursive, myanmar, ugaritic, todhri, gurung-khema, mro, lycian, makasar, multani, ogham, vietnamese, old-permic, phags-pa, hanifi-rohingya, runic, buhid, old-italic, warang-citi, adlam, imperial-aramaic, duployan, egyptian-hieroglyphs, cham, mende-kikakui, masaram-gondi, caucasian-albanian, znamenny, bengali, elbasan, psalter-pahlavi, hatran, chorasmian, old-sogdian, khitan-small-script, anatolian-hieroglyphs, canadian-aboriginal, brahmi, tai-viet, gujarati, tai-tham, nko, greek, vithkuqi, devanagari, osmanya, lao, nag-mundari, tai-le, ottoman-siyaq-numbers, tamil, armenian, tamil-supplement, zanabazar-square, shavian, lisu, sharada, yi, inscriptional-parthian, vai, ahom, mahajani, mayan-numerals, ethiopic, osage, tibetan, yezidi, batak, balinese, ol-chiki, korean, japanese, old-persian, siddham, lepcha, sinhala, math, signwriting, tagalog, chinese-traditional, tirhuta, coptic, hanunoo, kirat-rai, kana-extended, nushu, buginese, javanese, old-uyghur, palmyrene, gothic, sundanese, linear-b, syriac, telugu, phoenician</li>
 <li>U+0E70 : not included in any glyphset definition</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
@@ -3014,34 +2812,20 @@ definitions.</p>
             
         
             
-                <h2>Repository Checks</h2>
+        
+            
+        
+            
+                <h2>Outline Checks</h2>
 <span class='section__emoji'>
-    🔥⏩⏩⏩
+    ⚠️⚠️
 </span>
 
     <h3>
     
-    Check OFL body text is correct.
+    Are there any misaligned on-curve points?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/license/OFL_body_text&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-    <h3>
-    
-    Check license file has good copyright string.
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/license/OFL_copyright&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
 
 
 
@@ -3055,7 +2839,7 @@ definitions.</p>
     
         <details>
             <summary>
-                🔥
+                ⚠️
                 NotoSansTest-Regular.ttf
                 
             </summary>
@@ -3064,17 +2848,22 @@ definitions.</p>
                 
                         <li class='details_item'>
                             <span class='details_indicator'>
-                            🔥 FAIL
+                            ⚠️ WARN
                             </span>
 
                             <span class='details_text'>
-                            <p>First line in license file is:</p>
-<p>&quot;copyright 20** the noto project authors (<a href="https://github.com/notofonts/noto-project-template">https://github.com/notofonts/noto-project-template</a>)&quot;</p>
-<p>which does not match the expected format, similar to:</p>
-<p>&quot;Copyright 2022 The Familyname Project Authors (git url)&quot;</p>
+                            <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
+<pre><code>* uni0E70 (U+0E70): X=892.0,Y=2.0 (should be at baseline 0?)
+
+* uni0E70 (U+0E70): X=413.0,Y=2.0 (should be at baseline 0?)
+
+* uni0E70 (U+0E70): X=563.0,Y=-2.0 (should be at baseline 0?)
+
+* uni0E70 (U+0E70): X=726.0,Y=-2.0 (should be at baseline 0?)
+</code></pre>
 
                             
-                             [code: bad-format]
+                             [code: found-misalignments]
                             
                             </span>
                         </li>
@@ -3087,9 +2876,56 @@ definitions.</p>
 
     <h3>
     
-    Directory name in GFonts repo structure must match NameID 1 of the regular.
+    Are any segments inordinately short?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/repo/dirname_matches_nameid_1&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                NotoSansTest-Regular.ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                            <p>The following glyphs have segments which seem very short:</p>
+<pre><code>* uni0E70 (U+0E70) contains a short segment L&lt;&lt;175.0,54.0&gt;--&lt;174.0,54.0&gt;&gt;
+</code></pre>
+
+                            
+                             [code: found-short-segments]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+    <h3>
+    
+    Do any segments have colinear vectors?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
 
 
 
@@ -3105,9 +2941,9 @@ definitions.</p>
 
     <h3>
     
-    A font repository should not include FontBakery report files
+    Do outlines contain any jaggy segments?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/repo/fb_report&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
 
 
 
@@ -3123,9 +2959,9 @@ definitions.</p>
 
     <h3>
     
-    Check upstream.yaml file contains all required fields
+    Do outlines contain any semi-vertical or semi-horizontal lines?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/repo/upstream_yaml_has_required_fields&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
 
 
 
@@ -3141,27 +2977,9 @@ definitions.</p>
 
     <h3>
     
-    A static fonts directory, if present, must contain manually hinted fonts
+    Check the direction of the outermost contour in each glyph
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/repo/vf_has_static_fonts&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-
-
-    <h3>
-    
-    A font repository should not include ZIP files
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/repo/zip_files&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_direction&gt;</div>
 
 
 
@@ -3180,7 +2998,7 @@ definitions.</p>
             
                 <h2>Font File Checks</h2>
 <span class='section__emoji'>
-    💥🔥🔥🔥⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️
+    🔥🔥🔥⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️
 </span>
 
     <h3>
@@ -3396,43 +3214,6 @@ definitions.</p>
 </div>
 
 
-    
-        <details>
-            <summary>
-                💥
-                NotoSansTest-Regular.ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            💥 ERROR
-                            </span>
-
-                            <span class='details_text'>
-                            <p>Failed to access: <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a>.
-This check relies on the external service <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a> via the internet. While the service cannot be reached or does not respond this check is broken.</p>
-<pre><code>	You can exclude this check with the command line option:
-	-x com.google.fonts/check/fontdata_namecheck
-
-	Or you can wait until the service is available again.
-	If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
-
-	Original error message:
-	&lt;class 'requests.exceptions.ConnectionError'&gt;
-</code></pre>
-
-                            
-                             [code: namecheck-service]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
     
 
 

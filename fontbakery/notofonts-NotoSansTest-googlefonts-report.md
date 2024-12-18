@@ -1,73 +1,17 @@
 ## FontBakery report
 
-fontbakery version: 0.12.9
+fontbakery version: 0.12.10
 
 
 
-## Experimental checks
-
-These won't break the CI job for now, but will become effective after some time if nobody raises any concern.
 
 
-<details><summary>[1] NotoSansTest-Regular.ttf</summary>
+## Check results
+
+
+
+<details><summary>[12] NotoSansTest-Regular.ttf</summary>
 <div>
-<details>
-    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>Family metadata at fonts/NotoSansTest/googlefonts/ttf does not have an article.</p>
- [code: lacks-article]
-
-
-
-</div>
-</details>
-</div>
-</details>
-
-
-
-
-## All other checks
-
-
-
-<details><summary>[13] NotoSansTest-Regular.ttf</summary>
-<div>
-<details>
-    <summary>💥 <b>ERROR</b> Familyname must be unique according to namecheck.fontdata.com <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 💥 **ERROR** <p>Failed to access: <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a>.
-This check relies on the external service <a href="http://namecheck.fontdata.com">http://namecheck.fontdata.com</a> via the internet. While the service cannot be reached or does not respond this check is broken.</p>
-<pre><code>	You can exclude this check with the command line option:
-	-x com.google.fonts/check/fontdata_namecheck
-
-	Or you can wait until the service is available again.
-	If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
-
-	Original error message:
-	&lt;class 'requests.exceptions.ConnectionError'&gt;
-</code></pre>
- [code: namecheck-service]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Checking correctness of monospaced metadata. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/opentype.name.html#"></a></summary>
     <div>
@@ -132,27 +76,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 * 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
  [code: missing-description]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check license file has good copyright string. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.license.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>First line in license file is:</p>
-<p>&quot;copyright 20** the noto project authors (<a href="https://github.com/notofonts/noto-project-template">https://github.com/notofonts/noto-project-template</a>)&quot;</p>
-<p>which does not match the expected format, similar to:</p>
-<p>&quot;Copyright 2022 The Familyname Project Authors (git url)&quot;</p>
- [code: bad-format]
 
 
 
@@ -1182,6 +1105,52 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
+    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Family metadata at fonts/NotoSansTest/googlefonts/ttf does not have an article.</p>
+ [code: lacks-article]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+0020 SPACE: try adding one of: cherokee, old-turkic, miao, cypro-minoan, arabic, dogra, tifinagh, marchen, chinese-hongkong, bassa-vah, medefaidrin, new-tai-lue, indic-siyaq-numbers, music, limbu, sogdian, garay, chakma, old-south-arabian, inscriptional-pahlavi, meroitic, saurashtra, takri, cyrillic, deseret, symbols, meetei-mayek, thaana, latin-ext, glagolitic, samaritan, tulu-tigalari, elymaic, toto, oriya, khudawadi, linear-a, carian, greek-ext, hebrew, tangsa, cuneiform, gurmukhi, georgian, bamum, gunjala-gondi, modi, nyiakeng-puachue-hmong, cyrillic-ext, mandaic, kawi, ol-onal, thai, sora-sompeng, mongolian, tagbanwa, kharoshthi, grantha, old-north-arabian, sunuwar, avestan, braille, nandinagari, newa, soyombo, rejang, dives-akuru, meroitic-hieroglyphs, khojki, latin, nabataean, chinese-simplified, wancho, pau-cin-hau, cypriot, malayalam, kaithi, syloti-nagri, lydian, bhaiksuki, kannada, manichaean, old-hungarian, pahawh-hmong, symbols2, tangut, kayah-li, meroitic-cursive, myanmar, ugaritic, todhri, gurung-khema, mro, lycian, makasar, multani, ogham, vietnamese, old-permic, phags-pa, hanifi-rohingya, runic, buhid, old-italic, warang-citi, adlam, imperial-aramaic, duployan, egyptian-hieroglyphs, cham, mende-kikakui, masaram-gondi, caucasian-albanian, znamenny, bengali, elbasan, psalter-pahlavi, hatran, chorasmian, old-sogdian, khitan-small-script, anatolian-hieroglyphs, canadian-aboriginal, brahmi, tai-viet, gujarati, tai-tham, nko, greek, vithkuqi, devanagari, osmanya, lao, nag-mundari, tai-le, ottoman-siyaq-numbers, tamil, armenian, tamil-supplement, zanabazar-square, shavian, lisu, sharada, yi, inscriptional-parthian, vai, ahom, mahajani, mayan-numerals, ethiopic, osage, tibetan, yezidi, batak, balinese, ol-chiki, korean, japanese, old-persian, siddham, lepcha, sinhala, math, signwriting, tagalog, chinese-traditional, tirhuta, coptic, hanunoo, kirat-rai, kana-extended, nushu, buginese, javanese, old-uyghur, palmyrene, gothic, sundanese, linear-b, syriac, telugu, phoenician</li>
+<li>U+00A0 NO-BREAK SPACE: try adding one of: cherokee, old-turkic, miao, cypro-minoan, arabic, dogra, tifinagh, marchen, chinese-hongkong, bassa-vah, medefaidrin, new-tai-lue, indic-siyaq-numbers, music, limbu, sogdian, garay, chakma, old-south-arabian, inscriptional-pahlavi, meroitic, saurashtra, takri, cyrillic, deseret, symbols, meetei-mayek, thaana, latin-ext, glagolitic, samaritan, tulu-tigalari, elymaic, toto, oriya, khudawadi, linear-a, carian, greek-ext, hebrew, tangsa, cuneiform, gurmukhi, georgian, bamum, gunjala-gondi, modi, nyiakeng-puachue-hmong, cyrillic-ext, mandaic, kawi, ol-onal, thai, sora-sompeng, mongolian, tagbanwa, kharoshthi, grantha, old-north-arabian, sunuwar, avestan, braille, nandinagari, newa, soyombo, rejang, dives-akuru, meroitic-hieroglyphs, khojki, latin, nabataean, chinese-simplified, wancho, pau-cin-hau, cypriot, malayalam, kaithi, syloti-nagri, lydian, bhaiksuki, kannada, manichaean, old-hungarian, pahawh-hmong, symbols2, tangut, kayah-li, meroitic-cursive, myanmar, ugaritic, todhri, gurung-khema, mro, lycian, makasar, multani, ogham, vietnamese, old-permic, phags-pa, hanifi-rohingya, runic, buhid, old-italic, warang-citi, adlam, imperial-aramaic, duployan, egyptian-hieroglyphs, cham, mende-kikakui, masaram-gondi, caucasian-albanian, znamenny, bengali, elbasan, psalter-pahlavi, hatran, chorasmian, old-sogdian, khitan-small-script, anatolian-hieroglyphs, canadian-aboriginal, brahmi, tai-viet, gujarati, tai-tham, nko, greek, vithkuqi, devanagari, osmanya, lao, nag-mundari, tai-le, ottoman-siyaq-numbers, tamil, armenian, tamil-supplement, zanabazar-square, shavian, lisu, sharada, yi, inscriptional-parthian, vai, ahom, mahajani, mayan-numerals, ethiopic, osage, tibetan, yezidi, batak, balinese, ol-chiki, korean, japanese, old-persian, siddham, lepcha, sinhala, math, signwriting, tagalog, chinese-traditional, tirhuta, coptic, hanunoo, kirat-rai, kana-extended, nushu, buginese, javanese, old-uyghur, palmyrene, gothic, sundanese, linear-b, syriac, telugu, phoenician</li>
+<li>U+0E70 : not included in any glyphset definition</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
+ [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
     <summary>⚠️ <b>WARN</b> Are there any misaligned on-curve points? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/outline.html#"></a></summary>
     <div>
 
@@ -1228,34 +1197,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
-any subsets defined in the font's metadata file, and will never
-be served. You can solve this by either manually adding additional
-subset declarations to METADATA.pb, or by editing the glyphset
-definitions.</p>
-<ul>
-<li>U+0020 SPACE: try adding one of: inscriptional-parthian, avestan, tagalog, buhid, pahawh-hmong, sundanese, korean, ahom, cyrillic-ext, vietnamese, soyombo, znamenny, ol-chiki, mro, phoenician, bhaiksuki, runic, cuneiform, miao, arabic, latin-ext, thaana, music, mongolian, yi, adlam, lycian, malayalam, lepcha, dives-akuru, gothic, javanese, tibetan, makasar, ogham, meroitic, gunjala-gondi, pau-cin-hau, kayah-li, devanagari, meroitic-cursive, psalter-pahlavi, old-persian, thai, deseret, lao, phags-pa, khitan-small-script, coptic, kana-extended, oriya, chorasmian, glagolitic, shavian, newa, cherokee, elbasan, limbu, chinese-simplified, tai-le, syloti-nagri, mandaic, sora-sompeng, anatolian-hieroglyphs, cyrillic, marchen, lydian, linear-b, nko, greek-ext, canadian-aboriginal, old-uyghur, kannada, grantha, balinese, kawi, wancho, inscriptional-pahlavi, medefaidrin, toto, lisu, nag-mundari, new-tai-lue, duployan, sogdian, osmanya, dogra, tangsa, takri, indic-siyaq-numbers, georgian, khudawadi, ethiopic, ottoman-siyaq-numbers, tangut, tamil, symbols, braille, mende-kikakui, hanunoo, meroitic-hieroglyphs, multani, old-sogdian, hanifi-rohingya, modi, hatran, kaithi, cham, rejang, tai-tham, elymaic, linear-a, buginese, yezidi, nushu, hebrew, manichaean, bengali, bassa-vah, tirhuta, latin, tamil-supplement, old-north-arabian, nyiakeng-puachue-hmong, brahmi, old-hungarian, imperial-aramaic, mahajani, ugaritic, siddham, gurmukhi, chakma, caucasian-albanian, bamum, vai, tagbanwa, syriac, math, japanese, egyptian-hieroglyphs, vithkuqi, telugu, warang-citi, old-permic, old-italic, masaram-gondi, batak, myanmar, tifinagh, chinese-hongkong, saurashtra, old-turkic, nandinagari, chinese-traditional, zanabazar-square, signwriting, tai-viet, gujarati, nabataean, carian, palmyrene, greek, sharada, cypro-minoan, sinhala, old-south-arabian, samaritan, mayan-numerals, armenian, osage, meetei-mayek, khojki, kharoshthi, cypriot</li>
-<li>U+00A0 NO-BREAK SPACE: try adding one of: inscriptional-parthian, avestan, tagalog, buhid, pahawh-hmong, sundanese, korean, ahom, cyrillic-ext, vietnamese, soyombo, znamenny, ol-chiki, mro, phoenician, bhaiksuki, runic, cuneiform, miao, arabic, latin-ext, thaana, music, mongolian, yi, adlam, lycian, malayalam, lepcha, dives-akuru, gothic, javanese, tibetan, makasar, ogham, meroitic, gunjala-gondi, pau-cin-hau, kayah-li, devanagari, meroitic-cursive, psalter-pahlavi, old-persian, thai, deseret, lao, phags-pa, khitan-small-script, coptic, kana-extended, oriya, chorasmian, glagolitic, shavian, newa, cherokee, elbasan, limbu, chinese-simplified, tai-le, syloti-nagri, mandaic, sora-sompeng, anatolian-hieroglyphs, cyrillic, marchen, lydian, linear-b, nko, greek-ext, canadian-aboriginal, old-uyghur, kannada, grantha, balinese, kawi, wancho, inscriptional-pahlavi, medefaidrin, toto, lisu, nag-mundari, new-tai-lue, duployan, sogdian, osmanya, dogra, tangsa, takri, indic-siyaq-numbers, georgian, khudawadi, ethiopic, ottoman-siyaq-numbers, tangut, tamil, symbols, braille, mende-kikakui, hanunoo, meroitic-hieroglyphs, multani, old-sogdian, hanifi-rohingya, modi, hatran, kaithi, cham, rejang, tai-tham, elymaic, linear-a, buginese, yezidi, nushu, hebrew, manichaean, bengali, bassa-vah, tirhuta, latin, tamil-supplement, old-north-arabian, nyiakeng-puachue-hmong, brahmi, old-hungarian, imperial-aramaic, mahajani, ugaritic, siddham, gurmukhi, chakma, caucasian-albanian, bamum, vai, tagbanwa, syriac, math, japanese, egyptian-hieroglyphs, vithkuqi, telugu, warang-citi, old-permic, old-italic, masaram-gondi, batak, myanmar, tifinagh, chinese-hongkong, saurashtra, old-turkic, nandinagari, chinese-traditional, zanabazar-square, signwriting, tai-viet, gujarati, nabataean, carian, palmyrene, greek, sharada, cypro-minoan, sinhala, old-south-arabian, samaritan, mayan-numerals, armenian, osage, meetei-mayek, khojki, kharoshthi, cypriot</li>
-<li>U+0E70 : not included in any glyphset definition</li>
-</ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font:</p>
- [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.meta.html#"></a></summary>
     <div>
 
@@ -1282,8 +1223,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 1 | 0 | 7 | 6 | 125 | 7 | 106 | 0 | 
-| 0% | 0% | 3% | 2% | 50% | 3% | 42% | 0% | 
+| 0 | 0 | 6 | 6 | 124 | 7 | 108 | 0 | 
+| 0% | 0% | 2% | 2% | 49% | 3% | 43% | 0% | 
 
 
 
