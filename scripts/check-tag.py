@@ -30,7 +30,7 @@ real_family_names = [ TTFont(x)["name"].getDebugName(1) for x in a_font ]
 # Identify the config file which created this
 found_config = None
 for config in glob("sources/*yaml"):
-	this_config = yaml.load(open(config), Loader=yaml.FullLoader)
+	this_config = yaml.safe_load(open(config))
 	if "familyName" in this_config and this_config["familyName"] in real_family_names:
 		found_config = config
 		break
