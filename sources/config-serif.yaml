@@ -1,6 +1,7 @@
-googleFonts: true
+recipeProvider: noto
 sources:
-- NotoSerifTest.designspace
-axisOrder:
-  - wght
-familyName: Noto Serif Test
+- NotoSerifOlOnal.glyphs
+familyName: Noto Serif Ol Onal
+includeSubsets:
+- from: Noto Serif
+  name: GF_Latin_Core
